@@ -1,0 +1,13 @@
+{
+	"type":"component",
+	"name":"Knowledge Base",
+	"description":"Knowledge Base Help System",
+	"version":"1.0",
+	"author":"Mohammad Reza Hashemi",
+	"url":"http://sepehrit.ir",
+	"release":"2016-06-27",
+	"update":"http://update.sepehrit.ir",
+	"icon":{
+		"image":"components/knowledge/assets/icon.png"
+	}
+}

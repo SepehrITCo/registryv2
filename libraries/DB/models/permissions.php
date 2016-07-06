@@ -1,0 +1,1 @@
+<?php class _2dedcc6f extends ActiveRecord\Model{ static  $table_name = "permissions";} ?>

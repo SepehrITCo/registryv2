@@ -1,0 +1,89 @@
+{
+	"USERS":{
+		"YOU_HAVE_LOGOUT":"شما با موفیت از حساب کاربری خود خارج شدید.",
+		"INCORRECT_CREDENTIAL":"اطلاعات ورود صحیح نمی باشد.",
+		"SIGN_IN":"ورود",
+		"REMEMBER_ME":"من را بخاطر بسپار",
+		"FORGOT_PASSWORD":"بازیابی رمز عبور",
+		"ENTER_USERNAME_PASSWORD":"نام کاربری و رمز عبور خود را وارد نمایید.",
+		"MEMBER_SINCE":"کاربر از ",
+		"LOGIN":"ورود",
+		"PROFILE":"پروفایل",
+		"SIGN_OUT":"خروج",
+		"PERMIT_DENIED":"شما مجوز دسترسی به این منبع را ندارید.",
+		"EDIT_USER_PROFILE":"ویرایش پروفایل کاربر",
+		"LAST_LOGINS":"تاریخچه آخرین ورود ها",
+		"EDIT_PROFILE_IMAGE":"تغییر تصویر کاربر",
+		"MANAGEMENT":"ویرایش کاربران",
+		"ROLES":"نقش ها",
+		"USER_NOT_FOUND":"کاربر درخواست شده یافت نشد.",
+		"CREATE_USER_PROFILE":"ایجاد کاربر",
+		"CREATE_NEW_ROLE":"ایجاد نقش",
+		"EDIT_ROLE":"ویرایش نقش",
+		"PERMISSIONS":"دسترسی ها",
+		"ROLE_NAME":"عنوان نقش",
+		"ROLE_DESCRIPTION":"توضیحات نقش",
+		"ROLE_SLUG":"نام انحصاری",
+		"NAME":"نام",
+		"EMAIL":"پست الکترونیک",
+		"MOBILE":"تلفن همراه",
+		"LANGUAGE":"زبان",
+		"BLOCK_USER":"مسدود سازی کاربر",
+		"PASSWORD":"رمز عبور",
+		"PASSWORD_CONFIRM":"تاییدیه رمزعبور",
+		"ARE_U_SURE_REMOVE_ROLE":"آیا واقعا قصد حذف این نقش را دارید؟",
+		"ARE_U_SURE_REMOVE_USER":"آیا واقعا قصد حذف این کاربر را دارید؟",
+		"PROFILE_EDITED":"پروفایل ویرایش گردید.",
+		"ROLE_HASBEEN_EDITED":"نقش ویرایش گردید.",
+		"ROLE_DELETED":"نقش حذف گردید.",
+		"USER_DELETED":"کاربر حذف گردید.",
+		"YOUR_PASSWORD_CHANGED":"رمزعبور تغییر یافت.",
+		"BLOCK":"مسدود",
+		"ID":"ID"
+
+	},
+	
+	"FORM":{
+		"INCORRECT_TOKEN":"نشست ثبت فرم شما منقضی گردیده است. لطفا مجددا تلاش نمایید.",
+		"UPLOAD_ERROR":"هنگام آپلود خطایی رخ داده است.",
+		"UPLOAD":{
+			"0" : "There is no error, the file uploaded with success",
+			"1" : "The uploaded file exceeds the upload_max_filesize directive in php.ini",
+			"2" : "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
+			"3" : "The uploaded file was only partially uploaded",
+			"4" : "No file was uploaded",
+			"6" : "Missing a temporary folder",
+			"7" : "Failed to write file to disk.",
+			"8" : "A PHP extension stopped the file upload."
+		}
+	},
+
+	"DASHBOARD":{
+		"NOTIFICATIONS":"اطلاعیه ها"
+	},
+
+	
+	"TEMPLATE":{
+		"TOGGLE_NAV":"تغییر نمایش منو",
+		"SEARCH_PLACE_HOLDER":"جستجو ...",
+		"MAIN_MENU":"منو اصلی",
+		"PAGE":"صفحه",
+		"OF":"از",
+		"DASHBOARD":"داشبورد",
+		"RESULT_PER_PAGE":"نتایج:",
+		"INVALID_REQUEST":"درخواست نامعتبر",
+		"SAVE":"ذخیره",
+		"SUBMIT":"ثبت",
+		"DELETE":"حذف",
+		"BACK":"بازگشت",
+		"RESET":"بازیابی",
+		"ERROR":"خطا",
+		"NEVER":"Never",
+		"SOMETHING_GOES_WRONG":"متاسفانه خطایی رخ داده است.",
+		"DEFAULT_ERROR":"جهت ادامه فعالیت در سامانه پیشنهاد می شود به <a href='%s'>صفحه نخست</a> بازگردید و مجددا درخواست خود را انجام دهید.",
+		"PAGE_NOT_FOUND":"منبع درخواستی شما یافت نشد.",
+		"YOU_HAVE_N_NOTIF":"شما %d اطلاعیه دارید",
+		"VIEW_ALL":"نمایش همه"
+
+	}
+}

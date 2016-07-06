@@ -1,0 +1,1 @@
+<?php class _1483a5e9 extends ActiveRecord\Model{ static  $table_name = "users";} ?>

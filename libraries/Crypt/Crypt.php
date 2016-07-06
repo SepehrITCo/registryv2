@@ -1,0 +1,81 @@
+<?php 
+	defined("_IW") or die( "DIRECT ACCESS NOT ALLOWED" );
+
+define("SALT",config("IW.SECRET_KEY"));
+class Crypt{
+	
+	private static $salt = SALT;
+	public static function safe_b64encode($string) {
+        $data = base64_encode($string);
+        $data = str_replace(array('+','/','='),array('-','_',''),$data);
+        return $data;
+    }
+    public static function safe_b64decode($string) {
+        $data = str_replace(array('-','_'),array('+','/'),$string);
+        $mod4 = strlen($data) % 4;
+        if ($mod4) {
+            $data .= substr('====', $mod4);
+        }
+        return base64_decode($data);
+    }
+	
+	public static function encode($value){ 
+        if(!$value){return false;}
+        $text = $value;
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+        $crypttext = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, self::$salt, $text, MCRYPT_MODE_ECB, $iv);
+        return trim(self::safe_b64encode($crypttext)); 
+    }
+    public static function decode($value){
+        if(!$value){return false;}
+        $crypttext = self::safe_b64decode($value); 
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+        $decrypttext = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, self::$salt, $crypttext, MCRYPT_MODE_ECB, $iv);
+        return trim($decrypttext);
+    }
+	
+	public static function createToken($valid,$key_salt = SALT){
+		$now = time();
+		$till = $now + $valid;
+		$token = self::encode($now."-".$till."-".$key_salt);
+		return $token;
+	}
+	
+	public static function validateToken($token,$key_salt = SALT){
+		$token = self::decode($token);
+		$chunks = explode("-",$token);
+		if($chunks[2] !== $key_salt) return false;
+		$validFrom = (int)$chunks[0];
+		$validTill = (int)$chunks[1];
+		$now = time();
+		if($now > $validFrom && $now < $validTill) return true;
+		return false;
+	}
+	
+
+
+    public static function verifyPassword($input,$hashed){
+        list($password,$salt) = explode(":",$hashed);
+        if( md5($input.":".$salt.SALT) === $password ) return true;
+        return false;
+    }
+
+	public static function verifyOTP($input,$otp){
+        list($password,$time) = explode("@",$otp);
+
+		if(strtotime($time) > time()-3600)
+			if($input == $password) return true;
+
+        return false;
+    }
+	
+    public static function generatePassword($password){
+        $salt = md5(time()+rand(0,5000));
+        $password = md5($password.":".$salt.SALT);
+        return $password.":".$salt;
+    }
+
+
+}

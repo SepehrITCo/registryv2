@@ -1,0 +1,119 @@
+<workflow>
+	<Actors>
+		<actor id=created_by>Karmand</actor>
+		<actor id=2>Raees</actor>
+		<actor id=3>Kargozini</actor>
+	</Actors>
+	
+	<State id="A">
+		<Actors selectable multiple condition>
+			<actor id=1 />
+		</Actors>
+		
+		<visible>
+			<region id=1 />
+		</visible>
+		<editable>
+			<region id=1 />
+		</editable>
+		
+		<vectors>
+			<vector id=1 condition="[form][submit]==1" to="B">
+	
+			</vector>
+		</vectors>
+	</State>
+	<State id="B">
+		<Actors selectable multiple condition>
+			<actor id=2>
+				<visible>
+					<region id=1 />
+				</visible>
+				<editable>
+					<region id=1 />
+				</editable>
+				<vectors>
+					<vector title="Accept" id=1 condition="[form][submit]==1" to="C">
+						<action function='email' subject= body= to= />
+					</vector>
+					<vector title="Reject" id=2 condition="[form][submit]==2" to="D">
+						<action function='email' subject= body= to= />
+					</vector>
+				</vectors>
+			</actor>
+			<actor id=3>
+				<visible>
+					<region id=1 />
+					<region id=2 />
+				</visible>
+				<editable>
+					<region id=1 />
+					<region id=2 />
+				</editable>
+				<vectors>
+					<vector title="Accept" id=1 condition="[form][submit]==1" to="C">
+						<action function='email' subject= body= to= />
+					</vector>
+					<vector title="Reject" id=2 condition="[form][submit]==2" to="D">
+						<action function='email' subject= body= to= />
+					</vector>
+					<vector title="Defer" id=3 condition="[form][submit]==3" to="E">
+						<action function='email' subject= body= to= />
+					</vector>
+				</vectors>
+			</actor>
+		</Actors>
+		
+		<visible>
+			<region id=1 />
+			<region id=2 />
+		</visible>
+		<editable>
+			<region id=1 />
+			<region id=2 />
+		</editable>
+		
+		<vectors>
+			<vector title="Accept" id=1 condition="[form][submit]==1" to="C">
+				<action function='email' subject= body= to= />
+			</vector>
+			<vector title="Reject" id=2 condition="[form][submit]==2" to="D">
+				<action function='email' subject= body= to= />
+			</vector>
+		</vectors>
+	</State>
+	
+	<State id="C" end=true>
+		<Actors selectable multiple condition>
+			<actor id=3 />
+		</Actors>
+		
+		<visible>
+			<region id=1 />
+			<region id=2 />
+		</visible>
+		<editable>
+		</editable>
+		
+		<vectors>
+			<vector title="Print" id=1 to="C">
+				<action function="print" />
+			</vector>
+		</vectors>
+		
+	</State>
+
+	<State id="D" end=true>
+		<Actors selectable="true" multiple="false" condition="$x = false;">
+			<actor id=created_by />
+		</Actors>
+		
+		<visible>
+			<region id=1 />
+		</visible>
+		<editable>
+			<region id=1 />
+		</editable>
+		
+	</State>	
+</workflow>

@@ -1,0 +1,10 @@
+{
+	"type":"library",
+	"name":"Downloader",
+	"description":"Secure File Download Package",
+	"version":"1.0",
+	"author":"Mohammad Reza Hashemi",
+	"url":"http://sepehrit.ir",
+	"release":"2016-06-30",
+	"update":"http://update.sepehrit.ir"
+}

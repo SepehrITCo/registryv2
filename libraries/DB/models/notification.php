@@ -1,0 +1,1 @@
+<?php class _bf5476ca extends ActiveRecord\Model{ static  $table_name = "notification";} ?>

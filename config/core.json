@@ -1,0 +1,32 @@
+{
+    "DB": {
+        "DRIVER": "mysql:\/\/root:@localhost\/registryv2"
+    },
+    "IW": {
+        "GLOBAL_NAME": "RegistryV2",
+        "ROOT_AUTO_DETECT": false,
+        "ROOT": "http:\/\/localhost\/registryv2",
+        "DEFAULT_LANG": "2",
+        "SECRET_KEY": "secretkey@",
+        "LOG_PATH": ".\/logs\/",
+        "TEMPLATE": "adminlte",
+        "BASE_PATH": "\/registryv2",
+        "DEVELOPER": true,
+        "EXPIRE": "3600"
+    },
+    "SESSION": {
+        "NAME": "registryv2",
+        "EXPIRE": "3600"
+    },
+    "PAGE": {
+        "MOBILE": {
+            "LOGO": "<b>SIB<\/b>"
+        },
+        "LOGO": "IRAN <b>SIB<\/b>"
+    },
+    "SMS": {
+        "DRIVER": "onlinepanel",
+        "CONNECTION_STRING": "username:m_hashemizade;password:22223;from:50002333126507;url:http:\/\/onlinepanel.ir\/post\/sendSMS.ashx"
+    },
+    "lang": "onlinepanel"
+}

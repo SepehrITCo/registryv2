@@ -1,0 +1,13 @@
+{
+	"type":"component",
+	"name":"Message System",
+	"description":"Internal Message System",
+	"version":"2.0",
+	"author":"Mohammad Reza Hashemi",
+	"url":"http://sepehrit.ir",
+	"release":"2016-06-27",
+	"update":"http://update.sepehrit.ir",
+	"icon":{
+		"image":"components/message/assets/icon.png"
+	}
+}

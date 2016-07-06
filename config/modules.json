@@ -1,0 +1,5 @@
+{
+	"block00":[
+		{"module":"mod_php","params":{"PATH":"static/test.php"},"title":"test","state":1},
+	]
+}

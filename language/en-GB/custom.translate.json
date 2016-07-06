@@ -1,0 +1,29 @@
+{
+    "MENU": {
+        "MAIN_MENU": "Main Menu",
+        "HOME": "Home",
+        "DASHBOARD": "Dashboard",
+        "MESSAGE": "Message",
+        "UNREAD": "Unread",
+        "CREATE": "Create",
+        "CREATE_MESSAGE": "Create Message",
+        "USERS": "Users",
+        "MANAGE_USERS": "Manage Users",
+        "CREATE_USER": "Create User",
+        "MANAGE_ROLES": "Manage Roles",
+        "CREATE_ROLE": "Create Role",
+        "SARDASHT_COHORT": "Sardasht Cohort Study",
+        "SEARCH": "Search",
+        "EXPORT": "Export",
+        "INSTALLER": "Install\/Uninstall",
+        "SETTINGS": "Settings",
+        "INFO": "System Information",
+        "CORE": "System",
+        "LANGUAGE": "Language Manager",
+        "COMPOSE": "Compose",
+        "INBOX": "Inbox",
+        "TRASH": "Trash",
+        "SENT": "Sent",
+        "DRAFT": "Draft"
+    }
+}

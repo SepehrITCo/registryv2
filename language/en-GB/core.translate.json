@@ -1,0 +1,79 @@
+{
+    "CORE": {
+        "CORE": "Application",
+        "SETTINGS": "Settings",
+        "APPLICATION_SETTINGS": "Application Configuration",
+        "SESSION_SETTINGS": "Session Configuration",
+        "PAGE_SETTINGS": "Page Configuration",
+        "SMS_SETTINGS": "SMS Configuration",
+        "SETTINGS_SAVED": "%s settings successfully saved.",
+        "SYSTEM_INFO": "System Information",
+        "COMPONENTS": "Components",
+        "LIBRARIES": "Libraries",
+        "MODULES": "Modules",
+        "PLUGINS": "Plugins",
+        "INSTALL_NEW_ITEM": "Install New Extension",
+        "CHECK_FOR_UPDATE": "Check Update",
+        "UNINSTALL": "Uninstall",
+        "SYSTEM_INSTALLER": "Package Manager",
+        "DESCRIPTION": "Description",
+        "VERSION": "Version",
+        "AUTHOR": "Author",
+        "ARE_U_SURE_DELETE_EXT": "Are you sure about delete extension?",
+        "SUCCESS_REMOVE": "Package has successfully removed",
+        "INSTALLER": "Install Extensions",
+        "FILE_INPUT": "Upload Package",
+        "FILE_INPUT_SUBMIT": "Install Package",
+        "FAILED_INSTALL": "Failed to install package. check the package integrity.",
+        "EXTENSIONS": "Extensions",
+        "SUCCESS_INSTALL": "%s has successfully installed.",
+        "IW": {
+            "GLOBAL_NAME": "Global Name",
+            "ROOT_AUTO_DETECT": "Auto Root Detect",
+            "ROOT": "URL",
+            "DEFAULT_LANG": "Default Language",
+            "DEVELOPER": "Developer"
+        },
+        "SESSION": {
+            "NAME": "Session Name",
+            "EXPIRE": "Expire every"
+        },
+        "PAGE": {
+            "LOGO": "Logo",
+            "MOBILE": {
+                "LOGO": "Mobile Logo"
+            }
+        },
+        "SMS": {
+            "DRIVER": "Driver",
+            "CONNECTION_STRING": "Connection String"
+        },
+        "TRANSLATION": {
+            "TRANSLATIONS": "Translations",
+            "NEW_ITEM": "New Translation Item",
+            "FILE_NAME": "File Name",
+            "NEW_FILE": "Create Translation File",
+            "CREATE_FAILED": "Failed to create translation item",
+            "ITEM_HEAD": "Trans. Key",
+            "ITEM_VALUE": "Value",
+            "SUCCESS_REMOVE": "Successfully Removed",
+            "ARE_U_SURE_REMOVE_TRANS_FILE": "Are you sure about remove this translation file?",
+            "ARE_U_SURE_REMOVE_TRANS_ITEM": "Are you sure about remove translation item?",
+            "CODE": "Code",
+            "NAME": "Name",
+            "DIRECTION": "Direction",
+            "CUSTOM_DATE": "Custom Date",
+            "ACTIVE": "Active Language",
+            "MAP": "Language Map",
+            "TITLE": "Language Title"
+        },
+        "LANGUAGES": "Languages",
+        "LANGUAGE_MANAGEMENT": "Language Management",
+        "TRANSLATION_CREATED": "Translation file has been created."
+    },
+    " CORE": {
+        "TRANSLATION": {
+            "TITLE": "Language Title"
+        }
+    }
+}

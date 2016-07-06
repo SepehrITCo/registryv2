@@ -1,0 +1,21 @@
+{
+  "MENU":{
+    "MAIN_MENU":"منو اصلی",
+    "HOME":"خانه",
+    "DASHBOARD":"داشبورد",
+    "MESSAGE":"پیام ها",
+    "UNREAD":"خوانده نشده",
+    "CREATE":"ایجاد",
+    "CREATE_MESSAGE":"ایجاد پیام",
+    "USERS":"کاربران",
+    "MANAGE_USERS":"مدیریت کاربران",
+    "CREATE_USER":"ایجاد کاربر",
+    "MANAGE_ROLES":"مدیریت نقش ها",
+    "CREATE_ROLE":"ایجاد نقش",
+    "SARDASHT_COHORT":"مطالعات کوهورت سردشت",
+    "SEARCH":"جستجو",
+    "EXPORT":"استخراج داده"
+
+  }
+
+}

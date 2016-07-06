@@ -1,0 +1,14 @@
+{
+	"type":"component",
+	"name":"Users Package",
+	"description":"User/ACL Management Package",
+	"version":"1.0",
+	"author":"Mohammad Reza Hashemi",
+	"url":"http://sepehrit.ir",
+	"release":"2016-06-21",
+	"update":"http://update.sepehrit.ir",
+	"icon":{
+		"image":"components/users/assets/icon.png",
+		"font":"users"
+	}
+}

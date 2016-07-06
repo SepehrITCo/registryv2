@@ -1,0 +1,14 @@
+{
+	"type":"component",
+	"name":"Core Package",
+	"description":"Application Core Package",
+	"version":"1.2",
+	"author":"Mohammad Reza Hashemi",
+	"url":"http://sepehrit.ir",
+	"release":"2016-07-02",
+	"update":"http://update.sepehrit.ir",
+	"icon":{
+		"image":"components/core/assets/icon.png",
+		"font":"cog"
+	}
+}

@@ -1,0 +1,87 @@
+.login-page, .register-page{
+		background:#d2d6de url(../images/bing.jpg);
+}
+.login-page section.notify{
+	width:100% !important;
+	margin-top:0px !important;
+	
+}
+.login-page section.notify ul{
+	padding-left:7px !important;
+}
+.bing_credits{
+	position:fixed;
+	color:#FFF;
+	font-weight:bold;
+	bottom:5%;
+	left:5%;
+	font-size:14px;
+}
+.clearfix:after,.form-group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix ,.form-group{ display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix ,* html .form-group{ height: 1%; }
+.clearfix,.form-group { display: block; }
+
+#profile_upload_image{
+    position: absolute;
+    top: 10px;
+    left: 88px;
+    width: 160px;
+    height: 100px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor:pointer;
+}
+.error-page>.error-content{
+	margin-left:225px;
+	padding-top: 25px;
+}
+section.notify{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.notify-time{
+	color:#818080;
+	position:relative;
+	bottom:5px;
+}
+.installer-item{
+	height:150px;
+	overflow:hidden;
+	width:23%;
+	margin:1%;
+}
+.installer-item .box-header{
+	padding-left: 0px;
+}
+.installer-package .icon{
+	float:left;
+	margin:10px;
+	margin-top:0px;
+}
+.language-fields{
+	padding:0px;
+}
+.language-fields li{
+	list-style:none;
+	border-left:2px solid #55bda4;
+}
+.language-fields  .input-group .input-group-addon{
+	padding:0px 12px;
+}
+.mailbox-item{
+	cursor:pointer;
+}
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h4{
+	font-size:12px;
+}
